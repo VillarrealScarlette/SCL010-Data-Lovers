@@ -9,34 +9,48 @@
       <!-- INICIO Header - Banner -->
       <header>
         <div class="b-container">
-          <a class="logo-block" href="index.html">
-            <img class="logo" src="images/logo.png" alt="Pokemon Logo"></a>  
-          <input type="text" class="search" placeholder="Búsqueda">
-          <a href="#">
-            <img class="search" id="img_search" src="images/loupe.PNG" alt="buscar">
-          </a>
+          <div id="logo">
+            <a class="logo-block" href="index.html">
+              <img class="logo" src="images/logo.png" alt="Pokemon Logo"></a>
+          </div>
+          <div id="searchInitial">
+            <label for="search">Nombre o número</label><br>
+            <input type="search" id="search" class="search">
+            <a href="#">
+              <img id="img_search" src="images/loupe.PNG" alt="Buscar">
+            </a>
+            <p>Busca un pokemon ingresando su nombre <br> o su número de la Pokedex Nacional</p>
+          </div> 
         </div>
       </header>
       <!-- FIN Header - Banner -->
       <!-- INICIO Menú -->
-      <div class="menu">
-        <nav>
+      <div class="selecction">
+<!--        <nav>
           <ul>
-            <a href="">Tipo</a>
-            <a href="">Mapa</a>
-            <a href="">Noticias</a>
+            <li><a href="">Tipo</a></li>
+            <li><a href="">Mapa</a></li>
+            <li><a href="">Noticias</a></li>
           </ul>
-        </nav>
+        </nav> -->
+          <label for="order">Ordenar según</label><br>
+          <input id="order" class="select" type="select">
+          <label for="type">Tipo</label><br>
+          <input id="type" class="select" type="select">
+          <label for="eggs">Huevos</label><br>
+          <input id="eggs" class="select" type="select">
       </div>
       <!-- FIN Menú -->
-      <!-- INICIO Main -->
-      <main class="main">
-        <div class="pokedex">
-          <input type="file" class="search" id="pokesearch">
+      <!-- INICIO News -->
+      <!-- FIN News -->
+      <!-- INICIO Pokedex -->
+      <div class="pokeMenu">
+          <input type="text" class="search" id="pokesearch">
           <img class="search" id="img_search" src="images/loupe.PNG" alt="buscar">
-          
-        </div>
-      </main>
+      </div>
+      <section id="container_pokemones">
+      </section>
+      <!-- FIN Pokedex -->
     <div id="root"></div>
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
