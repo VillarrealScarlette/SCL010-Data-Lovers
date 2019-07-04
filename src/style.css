@@ -35,9 +35,7 @@ header {
     padding-left: 1em;
     margin-right: 30px;
 }
-#img_search {
-    max-width: 18px;
-}
+
 .search {
     height: 25px;
     width: 35;
@@ -49,4 +47,29 @@ header {
     width: 100%;
     box-sizing: border-box;
     justify-content: space-between;
+}
+
+#container_pokemones {
+    background-position: center;
+margin-right: 8%;
+margin-left: 8%;
+padding: 1%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: stretch;
+}
+
+img {
+    width: 80px; height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+text-align: center;
 }
