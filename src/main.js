@@ -21,4 +21,4 @@ pokemon.innerHTML = "createElement";
 window.addEventListener('click', openWindow);
 function openWindow(){
 
-}
+}*/
