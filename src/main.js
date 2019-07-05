@@ -40,7 +40,7 @@ popup.className = "popup";
 openWindow.addEventListener('click', function() {
 overlay.classList.add('active');
 });
-}
+}*/
 
 //closeWindow = document.getElementById("cerrarPopUp")
 //cerrarPopUp.id;
@@ -52,4 +52,4 @@ selectType.addEventListener("change", () => {
     let selectUserType = selectType.options[selectType.selectedIndex].value;
     console.log(selectUserType);
 });
-
+}
