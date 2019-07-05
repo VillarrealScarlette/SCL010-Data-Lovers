@@ -46,6 +46,7 @@ header {
 .filters {
     padding: 1em;
     display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: space-between;
 }
@@ -57,8 +58,8 @@ p {
     padding: 0px;
 }
 .search, .selector {
-    height: 35px;
-    width: 45;
+    height: 35px;  
+    width: 100px;
 }
 #container_pokemones {
     padding: 3em;
