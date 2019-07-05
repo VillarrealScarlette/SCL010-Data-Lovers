@@ -5,7 +5,6 @@ for (let i = 0; i < pokemones.length; i++) {
     console.log(pokemones[i].img);
     //Creando 'div' que será la tarjeta container 
     let pokeCards = document.createElement("div");
-    pokeCards.id = pokemones[i].name;
     pokeCards.className = "pokeCards";
     //Creando nombre del pokemon
     let pokeName = document.createElement("h3");
@@ -13,6 +12,7 @@ for (let i = 0; i < pokemones.length; i++) {
     //Creando imagen del pokemon
     let image = document.createElement("img");
     image.src = pokemones[i].img;
+    image.id = "pokeImagen";
     //Creando número del pokemon
     let pokeNumber = document.createElement("h4");
     pokeNumber.textContent = "#"+ pokemones[i].num;
@@ -30,7 +30,21 @@ for (let i = 0; i < pokemones.length; i++) {
     pokeCards.appendChild(pokeType2);
     //Mostrar tarjeta en HTLM -> section
     document.getElementById("container_pokemones").appendChild(pokeCards).innerHTML; 
+
+/* let openWindow = document.getElementById("pokeImagen");
+let overlay = document.createElement("div");
+overlay.className = "overlay";
+let popup = document.createElement("div");
+popup.className = "popup";
+
+openWindow.addEventListener('click', function() {
+overlay.classList.add('active');
+});
 }
+
+//closeWindow = document.getElementById("cerrarPopUp")
+//cerrarPopUp.id;
+
 //Valor 
 const selectType = document.getElementById("type");
 selectType.addEventListener("change", () => {
@@ -38,3 +52,4 @@ selectType.addEventListener("change", () => {
     let selectUserType = selectType.options[selectType.selectedIndex].value;
     console.log(selectUserType);
 });
+
