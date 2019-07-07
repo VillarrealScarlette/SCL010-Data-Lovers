@@ -25,13 +25,14 @@ header {
     flex-wrap: nowrap;
     background-color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     box-sizing: border-box;
 }
 #logo {
     max-width: 380px;
     margin-top: 0px;
+    margin-left: 3em;
 }
 /*  DIV FILTERS */
 .menu {
@@ -41,69 +42,29 @@ header {
     flex-wrap: wrap;
     width: 100%;
     box-sizing: border-box;
-    justify-content: space-around;
 }
-
-.overlay {
-    background: rgba(0, 0, 0,.4);
-    position: fixed;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
+.filters, .searchEngine {
+    width: 50%;
+    padding: 1em; 
+    box-sizing: border-box;
 }
-
-.overlay.active {
-    visibility: visible;
-}
-
-.popup {
-    background: #fff;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0,.4);
-    border-radius: 3px;
-    padding: 20px;
-    text-align: center;
-    width: 600px;
-
-}
-
-.popup .cerrarPopUp
-{
-    font-size: 16px;
-    line-height: 16px;
-    display: block;
-    text-align: right;
-    color: blue;
-    transition: .3s ease-all;
-}
-
-
-.popup .cerrarPopUp:hover {
-    color: #000000;
-}
-
-
 .filters {
-    padding: 1em;
+    justify-content: space-between;
+    padding-left: 3em;
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    justify-content: space-between;
 }
-#img_search {
-    max-width: 18px;
+.searchEngine {
+    text-align: right;
+    padding-right: 3em;
+}
+#search {
+    width: 150px;
+    height: 25px;
 }
 p {
     margin: 0px;
     padding: 0px;
-}
-.search, .selector {
-    height: 35px;  
-    width: 100px;
 }
 #container_pokemones {
     padding: 3em;
@@ -113,13 +74,18 @@ p {
     box-sizing: border-box;
     justify-content: space-around;
 }
-.pokeCards {
-    padding: 2em;
+div.pokeCards {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
     display: flex;
     flex-direction: column;
     text-align: center;
+    border: 1px solid blue;
 }
 h3 {
-    color: rgb(255, 213, 27);
-    text-shadow: 2.5px 0 0 rgb(12, 47, 202), -2.5px 0 0 rgb(12, 47, 202), 0 2.5px 0 rgb(12, 47, 202), 0 -2.5px 0 rgb(12, 47, 202), 1.5px 1.5px rgb(12, 47, 202), -1.5px -1.5px 0 rgb(12, 47, 202), 1.5px -1.5px 0 rgb(12, 47, 202), -1.5px 1.5px 0 rgb(12, 47, 202);
+    color: #ffcc03;
+    text-shadow: 2.5px 0 0 #386abb, -2.5px 0 0 #386abb, 0 2.5px 0 #386abb, 0 -2.5px 0 #386abb, 1.5px 1.5px #386abb, -1.5px -1.5px 0 #386abb, 1.5px -1.5px 0 #386abb, -1.5px 1.5px 0 #386abb;
 }
