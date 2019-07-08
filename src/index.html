@@ -17,13 +17,13 @@
         </div>
     </header>
     <!-- FIN Header - Banner -->
-
-    <!-- INICIO Menú --> s
+    <!-- INICIO Menú -->
     <div class="menu">
         <div class="filters">
             <div class="order filter">
                 <label for="order">Ordenar por </label><br>
                 <select class="selector" id="order">
+                        <option value="0" selected="selected">Seleccionar</option>
                     <option value="A-Z"> A - Z </option>
                     <option value="Z-A"> Z - A </option>
                     <option value="1-151"> 1 - 151 </option>
@@ -33,6 +33,7 @@
             <div class="type filter">
                 <label for="type">Filtrar por tipo</label><br>
                 <select class="selector" id="type">
+                        <option value="0" selected="selected">Seleccionar</option>
                     <option value="Bug"> Bug </option>
                     <option value="Dragon"> Dragon </option>
                     <option value="Electric"> Electric </option>
@@ -53,6 +54,7 @@
             <div class="eggs filter">
                 <label for="eggs">Huevos</label><br>
                 <select class="selector" id="eggs">
+                    <option value="0" selected="selected">Seleccionar</option>
                     <option value="2 km"> 2 km </option>
                     <option value="5 km"> 5 km </option>
                     <option value="10 km"> 10 km </option>
@@ -60,24 +62,18 @@
             </div>
         </div>
         <div class="searchEngine">
-            <label for="search">Nombre o número</label><br>
-            <input type="search" class="search">
-            <a href="#">
-                <img id="img_search" src="images/loupe.PNG" alt="Buscar">
-            </a>
-<!--            <p>Busca un pokemon ingresando su nombre <br> o su número de la Pokedex Nacional</p> -->
+            <label for="search">Ingresa nombre o número </label><br>
+            <input type="text" id="search" min="0" placeholder="Buscar">
+            <!-- <p>Busca un pokemon ingresando su nombre <br> o su número de la Pokedex Nacional</p> -->
         </div>
     </div>    
       <!-- FIN Menú -->
-      <!-- INICIO News -->
-      <!-- FIN News -->
       <!-- INICIO Pokedex -->
       <section id="container_pokemones">
       </section>
       <!-- FIN Pokedex -->
     <div id="root"></div>
-    <script src="https://kit.fontawesome.com/e4c8a11528.js"></script>
-    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
