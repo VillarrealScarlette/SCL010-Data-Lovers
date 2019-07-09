@@ -14,7 +14,7 @@ const filterEggs = (egg) => {
 return filters;
 }
 window.filterEggs = filterEggs;
-//Filtrat por Tipo
+//Filtrar por Tipo
 const filterTypes = (type) => {
   let filters = [];
   for (let i = 0; i < arrPokemones.length; i++) {
