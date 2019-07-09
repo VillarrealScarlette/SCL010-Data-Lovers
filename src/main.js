@@ -3,16 +3,25 @@ for (let i = 0; i < pokemones.length; i++) {
     console.log(pokemones[i].num);
     console.log(pokemones[i].name);
     console.log(pokemones[i].img);
+
     //Creando 'div' que será la tarjeta container 
     let pokeCards = document.createElement("div");
+    console.log(pokeCards);
     pokeCards.className = "pokeCards";
+    pokeCards.id = "pokeCards";
+    pokeCards.a =  pokemones[i].img;
+
     //Creando nombre del pokemon
     let pokeName = document.createElement("h3");
     pokeName.textContent = pokemones[i].name;
+
     //Creando imagen del pokemon
     let image = document.createElement("img");
     image.src = pokemones[i].img;
     image.id = "pokeImagen";
+    image.className  = "pokeImg";
+    image.onClick = pokemones[i].img;
+
     //Creando número del pokemon
     let pokeNumber = document.createElement("h4");
     pokeNumber.textContent = "#"+ pokemones[i].num;
@@ -29,27 +38,33 @@ for (let i = 0; i < pokemones.length; i++) {
     pokeCards.appendChild(pokeType);
     pokeCards.appendChild(pokeType2);
     //Mostrar tarjeta en HTLM -> section
-    document.getElementById("container_pokemones").appendChild(pokeCards).innerHTML; 
+    document.getElementById("container_pokemones").appendChild(pokeCards).innerHTML;
+    
+    
+// MODAL 
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("container_pokemones");
+function showModal() {
+modal.style.display = "block";
+};
+btn.addEventListener("click", showModal);
+//CERRAR MODAL
+let span = document.getElementsByClassName("close")[0];
+function closeModal() {
+  modal.style.display = "none";
+  };
+  span.addEventListener("click", closeModal);
 
-/* let openWindow = document.getElementById("pokeImagen");
-let overlay = document.createElement("div");
-overlay.className = "overlay";
-let popup = document.createElement("div");
-popup.className = "popup";
-
-openWindow.addEventListener('click', function() {
-overlay.classList.add('active');
-});
-}
-
-//closeWindow = document.getElementById("cerrarPopUp")
-//cerrarPopUp.id;
-
+// Para cerrar haciendo click afuera (NO ENTIENDO)
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
 //Valor 
 const selectType = document.getElementById("type");
 selectType.addEventListener("change", () => {
     //Condicion = variable
     let selectUserType = selectType.options[selectType.selectedIndex].value;
     console.log(selectUserType);
-});
-
+})};

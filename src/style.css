@@ -20,6 +20,8 @@ header {
     width: 100%;
     box-sizing: border-box;
 }
+
+
 .b-container {
     padding: 1em;
     flex-wrap: nowrap;
@@ -33,6 +35,9 @@ header {
     max-width: 380px;
     margin-top: 0px;
 }
+.logo-block :hover {
+
+}
 /*  DIV FILTERS */
 .menu {
     padding: 1em 2em 1em 2em;
@@ -44,35 +49,36 @@ header {
     justify-content: space-around;
 }
 
+
 .overlay {
-    background: rgba(0, 0, 0,.4);
-    position: fixed;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
 }
 
 .overlay.active {
-    visibility: visible;
+	visibility: visible;
 }
 
 .popup {
-    background: #fff;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0,.4);
-    border-radius: 3px;
-    padding: 20px;
-    text-align: center;
-    width: 600px;
-
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	padding: 20px;
+	text-align: center;
+	width: 600px;
+	transition: .3s ease all;
+	transform: scale(0.7);
 }
 
-.popup .cerrarPopUp
-{
+.popup .btnClose {
     font-size: 16px;
     line-height: 16px;
     display: block;
@@ -81,11 +87,22 @@ header {
     transition: .3s ease-all;
 }
 
-
-.popup .cerrarPopUp:hover {
+.popup .btnClose:hover {
     color: #000000;
 }
 
+.pokeImg{
+    cursor: pointer;
+}
+
+#pokeImagen {
+   
+}
+.pokeImg:hover {
+    background-color:;
+    -webkit-transform:scale(1.3);
+    transform:scale(1.1);
+}
 
 .filters {
     padding: 1em;
@@ -122,3 +139,80 @@ h3 {
     color: rgb(255, 213, 27);
     text-shadow: 2.5px 0 0 rgb(12, 47, 202), -2.5px 0 0 rgb(12, 47, 202), 0 2.5px 0 rgb(12, 47, 202), 0 -2.5px 0 rgb(12, 47, 202), 1.5px 1.5px rgb(12, 47, 202), -1.5px -1.5px 0 rgb(12, 47, 202), 1.5px -1.5px 0 rgb(12, 47, 202), -1.5px 1.5px 0 rgb(12, 47, 202);
 }
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
