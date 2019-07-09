@@ -1,4 +1,4 @@
-const POKEMON = {
+  const POKEMON = {
   "pokemon": [{
     "id": 1,
     "num": "001",
@@ -4085,3 +4085,4 @@ const POKEMON = {
   }]
 }
 ;;
+window.POKEMON = POKEMON;
