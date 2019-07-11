@@ -1,5 +1,6 @@
 const pokeData = window.POKEMON.pokemon;
 window.pokeData = pokeData;
+
 //Filtrar por Huevos
 const filterEggs = (pokeData, selectedEgg) => {
     const resultEgg = pokeData.filter(Element => {
@@ -16,7 +17,6 @@ const filterTypes = (pokeData, selectedType) => {
     return resultType;
 }
 window.filterTypes = filterTypes;
-
 //Ordenar
 const order = (pokeData, selectedOrder) => {
     let filterOrder = "";
@@ -36,3 +36,9 @@ const order = (pokeData, selectedOrder) => {
         return filterOrder; 
 }
 window.order = order;
+//Porcentaje
+const porcentageEgg = (filterResult, pokeData) => {
+    const result = Math.round(filterResult.length*100/pokeData.length);
+    return result;
+}
+window.porcentageEgg = porcentageEgg;
