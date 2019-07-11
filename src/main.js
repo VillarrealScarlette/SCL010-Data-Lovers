@@ -50,8 +50,7 @@ for (let i = 0; i < pokemones.length; i++) {
     //Mostrar tarjeta en HTLM -> section
 
     document.getElementById("container_pokemones").appendChild(cards).innerHTML;    
-    
-    console.log(pokeName);
+
 }
 
 
