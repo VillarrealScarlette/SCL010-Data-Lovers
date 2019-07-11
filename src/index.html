@@ -7,7 +7,8 @@
   </head>
   <body class="grid">
     <!-- INICIO Header - Banner -->
-    <header>
+    
+    <header id="arriba">
             <link rel="icon" type="image/vnd.microsoft.icon" href="RUTA/NOMBRE_FICHERO.ico">
             <img id="pikachu" class="pikachu" src="images/pikachu8.gif" height="150px" width="180px">
         <div class="b-container">
@@ -20,7 +21,7 @@
     </header>
     <!-- FIN Header - Banner -->
     <!-- INICIO Menú -->
-    <div class="menu">
+    <div class="menu" id="menu">
         <div class="filters">
             <div class="order filter">
                 <label for="order">Ordenar por </label><br>
@@ -68,9 +69,9 @@
             <!-- <p>Busca un pokemon ingresando su nombre <br> o su número de la Pokedex Nacional</p> -->
         </div>
     </div>    
-
-    <img id="arrow" class="arrow" src="images/icoflecha.png" width="45px" height="45px">
       <!-- FIN Menú -->
+      <a class="arrow" href="#arriba"><img class="arrow" src="images/icoflecha.png" width="45px" height="45px"></a>
+
       <!-- INICIO Pokedex -->
       <section id="container_pokemones" class="container_pokemones">
       </section>
