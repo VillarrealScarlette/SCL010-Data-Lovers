@@ -14,18 +14,21 @@ for (let i = 0; i < pokemones.length; i++) {
     image.src = pokemones[i].img;
     //Creando número del pokemon
     let pokeNumber = document.createElement("h4");
-    pokeNumber.textContent = pokemones[i].num;
+    pokeNumber.textContent = "#" + pokemones[i].num;
+    pokeNumber.className = "number";
     //Creando tipo de pokemon -> primer tipo
     let pokeType = document.createElement("p");
     pokeType.textContent = pokemones[i].type[0];
+    pokeType.className = "type";
     //Creando tipo de pokemon -> segundo tipo
     let pokeType2 = document.createElement("p");
+    pokeType2.className = "type2";
     pokeType2.textContent = pokemones[i].type[1];
     //Dando valor a variables
     cards.appendChild(pokeCards);
     pokeCards.appendChild(pokeName);
-    pokeCards.appendChild(pokeNumber);
     pokeCards.appendChild(image);
+    pokeCards.appendChild(pokeNumber);
     pokeCards.appendChild(pokeType);
     pokeCards.appendChild(pokeType2);
     //Mostrar tarjeta en HTLM -> section
@@ -56,7 +59,7 @@ function showByEgg() {
         pokeType.textContent = filterResult[i].type[0];
         let pokeType2 = document.createElement("p");
         pokeType2.textContent = filterResult[i].type[1];
-        textPorcentage.textContent = `El porcentaje de pokemones que eclocionan en huevos de ${selectedEgg} es ${window.porcentageEgg(filterResult, pokeData)}%`
+        textPorcentage.textContent = `El porcentaje de pokemones que eclocionan en huevos de ${selectedEgg} es ${window.porcentageEgg(filterResult, window.pokeData)}%`
         porcentage.appendChild(textPorcentage);
         pokeCards.appendChild(pokeName);
         pokeCards.appendChild(pokeNumber);
@@ -92,7 +95,7 @@ function showByType() {
         pokeType.textContent = filterResult[i].type[0];
         let pokeType2 = document.createElement("p");
         pokeType2.textContent = filterResult[i].type[1];
-        textPorcentage.textContent = `El porcentaje de pokemones tipo ${selectedType} son ${window.porcentageEgg(filterResult, pokeData)}%`
+        textPorcentage.textContent = `El porcentaje de pokemones tipo ${selectedType} son ${window.porcentageEgg(filterResult, window.pokeData)}%`
         porcentage.appendChild(textPorcentage);
         pokeCards.appendChild(pokeName);
         pokeCards.appendChild(pokeNumber);

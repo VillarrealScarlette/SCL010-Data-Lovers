@@ -4,7 +4,6 @@ require('../src/data/pokemon/pokemon');
 require('../src/data');
 require('./data.spec.js');
 
-
 describe('window.filterEggs', () => {
   const sampleEggs = [
     {
@@ -71,5 +70,19 @@ describe('window.order', () => {
 
   it("debería ser una función", () => {
     assert.equal(typeof order, "function");
+  });
+});
+describe('window.porcentageEgg', () => {
+
+  it("debería ser una función", () => {
+    assert.equal(typeof porcentageEgg, "function");
+  });
+
+  it("debería retornar que existe un 9% de pokemones que eclocionan al filtrar por huevos de 2 km", () => {
+    assert.deepEqual(window.porcentageEgg(window.filterResult, "2 km"), 9);
+  });
+
+  it("debería retornar que existe un 2% de pokemones de tipo Dragon", () => {
+    assert.deepEqual(window.porcentageEgg(window.filterResult, "Dragon"), 2);
   });
 });
