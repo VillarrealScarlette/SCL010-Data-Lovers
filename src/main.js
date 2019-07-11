@@ -1,14 +1,11 @@
 const pokemones = window.POKEMON.pokemon;
-for (let i = 0; i < pokemones.length; i++) {
-    
-    //Creando 'div' que será la tarjeta container 
-    
+for (let i = 0; i < pokemones.length; i++) {    
+    //Creando 'div' que será la tarjeta container    
     let cards = document.createElement("div");
-    cards.className = "cards";
-
+    cards.className = "flip-card";
     let pokeCards = document.createElement("div");
     pokeCards.className = "pokeCards";
-    pokeCards.id = "pokeCards";
+    pokeCards.id = "pokeCards";   
     //Creando nombre del pokemon
     let pokeName = document.createElement("h3");
     pokeName.textContent = pokemones[i].name;
@@ -27,7 +24,6 @@ for (let i = 0; i < pokemones.length; i++) {
     let pokeType2 = document.createElement("p");
     pokeType2.className = "type2";
     pokeType2.textContent = pokemones[i].type[1];
-
     //Dando valor a variables
     cards.appendChild(pokeCards);
     pokeCards.appendChild(pokeName);
@@ -35,31 +31,36 @@ for (let i = 0; i < pokemones.length; i++) {
     pokeCards.appendChild(pokeNumber);
     pokeCards.appendChild(pokeType);
     pokeCards.appendChild(pokeType2);
-
     //Mostrar tarjeta en HTLM -> section
-    document.getElementById("container_pokemones").appendChild(cards).innerHTML;       
+    document.getElementById("container_pokemones").appendChild(cards).innerHTML;        
 }
-
 //Filtrar por Huevo 
 const selectEggs = document.getElementById("eggs");
 selectEggs.addEventListener("change", showByEgg);
 function showByEgg() {
     //Condicion = variable
-    let pokemones = window.filterEggs(selectEggs.value);
+    let selectedEgg = selectEggs.options[selectEggs.selectedIndex].value;
+    let filterResult = window.filterEggs(window.pokeData, selectedEgg);
     document.getElementById("container_pokemones").innerHTML = "";
-    for (let i = 0; i < pokemones.length; i++) {
+    let porcentage = document.createElement("div");
+    porcentage.className = "porcentage";
+    let textPorcentage = document.createElement("p");
+    document.getElementById("container_pokemones").appendChild(porcentage).innerHTML;
+    for (let i = 0; i < filterResult.length; i++) {     
         let pokeCards = document.createElement("div");
         pokeCards.className = "pokeCards";
         let pokeName = document.createElement("h3");
-        pokeName.textContent = pokemones[i].name;
+        pokeName.textContent = filterResult[i].name;
         let image = document.createElement("img");
-        image.src = pokemones[i].img;
+        image.src = filterResult[i].img;
         let pokeNumber = document.createElement("h4");
-        pokeNumber.textContent = pokemones[i].num;
+        pokeNumber.textContent = filterResult[i].num;
         let pokeType = document.createElement("p");
-        pokeType.textContent = pokemones[i].type[0];
+        pokeType.textContent = filterResult[i].type[0];
         let pokeType2 = document.createElement("p");
-        pokeType2.textContent = pokemones[i].type[1];
+        pokeType2.textContent = filterResult[i].type[1];
+        textPorcentage.textContent = `El porcentaje de pokemones que eclocionan en huevos de ${selectedEgg} es ${window.porcentageEgg(filterResult, window.pokeData)}%`
+        porcentage.appendChild(textPorcentage);
         pokeCards.appendChild(pokeName);
         pokeCards.appendChild(pokeNumber);
         pokeCards.appendChild(image);
@@ -73,22 +74,29 @@ function showByEgg() {
 const selectType = document.getElementById("type");
 selectType.addEventListener("change", showByType);
 function showByType() {
-    //Condición = variable
-    let pokemones = window.filterTypes(selectType.value);
+    //Condicion = variable
+    let selectedType = selectType.options[selectType.selectedIndex].value;
+    let filterResult = window.filterTypes(window.pokeData, selectedType);
     document.getElementById("container_pokemones").innerHTML = "";
-    for (let i = 0; i < pokemones.length; i++) {
+    let porcentage = document.createElement("div");
+    porcentage.className = "porcentage";
+    let textPorcentage = document.createElement("p");
+    document.getElementById("container_pokemones").appendChild(porcentage).innerHTML;
+    for (let i = 0; i < filterResult.length; i++) {
         let pokeCards = document.createElement("div");
         pokeCards.className = "pokeCards";
         let pokeName = document.createElement("h3");
-        pokeName.textContent = pokemones[i].name;
+        pokeName.textContent = filterResult[i].name;
         let image = document.createElement("img");
-        image.src = pokemones[i].img;
+        image.src = filterResult[i].img;
         let pokeNumber = document.createElement("h4");
-        pokeNumber.textContent = pokemones[i].num;
+        pokeNumber.textContent = filterResult[i].num;
         let pokeType = document.createElement("p");
-        pokeType.textContent = pokemones[i].type[0];
+        pokeType.textContent = filterResult[i].type[0];
         let pokeType2 = document.createElement("p");
-        pokeType2.textContent = pokemones[i].type[1];
+        pokeType2.textContent = filterResult[i].type[1];
+        textPorcentage.textContent = `El porcentaje de pokemones tipo ${selectedType} son ${window.porcentageEgg(filterResult, window.pokeData)}%`
+        porcentage.appendChild(textPorcentage);
         pokeCards.appendChild(pokeName);
         pokeCards.appendChild(pokeNumber);
         pokeCards.appendChild(image);
@@ -102,94 +110,29 @@ function showByType() {
 const selectOrder = document.getElementById("order");
 selectOrder.addEventListener("change", showOrder);
 function showOrder() {
-    let order = selectOrder.options[selectOrder.selectedIndex].value;
+    let selectedOrder = selectOrder.options[selectOrder.selectedIndex].value;
+    let filterResult = window.order(window.pokeData, selectedOrder);
     document.getElementById("container_pokemones").innerHTML = "";
-    for (let i = 0; i < pokemones.length; i++) {
-        if (order === "1-151") {
-            window.ascendingNum();
-            let pokeCards = document.createElement("div");
-            pokeCards.className = "pokeCards";
-            let pokeName = document.createElement("h3");
-            pokeName.textContent = pokemones[i].name;
-            let image = document.createElement("img");
-            image.src = pokemones[i].img;
-            let pokeNumber = document.createElement("h4");
-            pokeNumber.textContent = pokemones[i].num;
-            let pokeType = document.createElement("p");
-            pokeType.textContent = pokemones[i].type[0];
-            let pokeType2 = document.createElement("p");
-            pokeType2.textContent = pokemones[i].type[1];
-            pokeCards.appendChild(pokeName);
-            pokeCards.appendChild(pokeNumber);
-            pokeCards.appendChild(image);
-            pokeCards.appendChild(pokeType);
-            pokeCards.appendChild(pokeType2);
-            //Mostrar tarjeta en HTLM -> section
-            document.getElementById("container_pokemones").appendChild(pokeCards).innerHTML;
-        } else if (order === "151-1") {
-            window.descendingNum();
-            let pokeCards = document.createElement("div");
-            pokeCards.className = "pokeCards";
-            let pokeName = document.createElement("h3");
-            pokeName.textContent = pokemones[i].name;
-            let image = document.createElement("img");
-            image.src = pokemones[i].img;
-            let pokeNumber = document.createElement("h4");
-            pokeNumber.textContent = pokemones[i].num;
-            let pokeType = document.createElement("p");
-            pokeType.textContent = pokemones[i].type[0];
-            let pokeType2 = document.createElement("p");
-            pokeType2.textContent = pokemones[i].type[1];
-            pokeCards.appendChild(pokeName);
-            pokeCards.appendChild(pokeNumber);
-            pokeCards.appendChild(image);
-            pokeCards.appendChild(pokeType);
-            pokeCards.appendChild(pokeType2);
-            //Mostrar tarjeta en HTLM -> section
-            document.getElementById("container_pokemones").appendChild(pokeCards).innerHTML;
-        } else if (order === "A-Z") {
-            window.descendingName();
-            let pokeCards = document.createElement("div");
-            pokeCards.className = "pokeCards";
-            let pokeName = document.createElement("h3");
-            pokeName.textContent = pokemones[i].name;
-            let image = document.createElement("img");
-            image.src = pokemones[i].img;
-            let pokeNumber = document.createElement("h4");
-            pokeNumber.textContent = pokemones[i].num;
-            let pokeType = document.createElement("p");
-            pokeType.textContent = pokemones[i].type[0];
-            let pokeType2 = document.createElement("p");
-            pokeType2.textContent = pokemones[i].type[1];
-            pokeCards.appendChild(pokeName);
-            pokeCards.appendChild(pokeNumber);
-            pokeCards.appendChild(image);
-            pokeCards.appendChild(pokeType);
-            pokeCards.appendChild(pokeType2);
-            //Mostrar tarjeta en HTLM -> section
-            document.getElementById("container_pokemones").appendChild(pokeCards).innerHTML;
-        } else if (order === "Z-A") {
-            window.ascendingName();
-            let pokeCards = document.createElement("div");
-            pokeCards.className = "pokeCards";
-            let pokeName = document.createElement("h3");
-            pokeName.textContent = pokemones[i].name;
-            let image = document.createElement("img");
-            image.src = pokemones[i].img;
-            let pokeNumber = document.createElement("h4");
-            pokeNumber.textContent = pokemones[i].num;
-            let pokeType = document.createElement("p");
-            pokeType.textContent = pokemones[i].type[0];
-            let pokeType2 = document.createElement("p");
-            pokeType2.textContent = pokemones[i].type[1];
-            pokeCards.appendChild(pokeName);
-            pokeCards.appendChild(pokeNumber);
-            pokeCards.appendChild(image);
-            pokeCards.appendChild(pokeType);
-            pokeCards.appendChild(pokeType2);
-            //Mostrar tarjeta en HTLM -> section
-            document.getElementById("container_pokemones").appendChild(pokeCards).innerHTML;
-        }
+    for (let i = 0; i < filterResult.length; i++) {
+        let pokeCards = document.createElement("div");
+        pokeCards.className = "pokeCards";
+        let pokeName = document.createElement("h3");
+        pokeName.textContent = filterResult[i].name;
+        let image = document.createElement("img");
+        image.src = filterResult[i].img;
+        let pokeNumber = document.createElement("h4");
+        pokeNumber.textContent = filterResult[i].num;
+        let pokeType = document.createElement("p");
+        pokeType.textContent = filterResult[i].type[0];
+        let pokeType2 = document.createElement("p");
+        pokeType2.textContent = filterResult[i].type[1];
+        pokeCards.appendChild(image);
+        pokeCards.appendChild(pokeName);
+        pokeCards.appendChild(pokeNumber);
+        pokeCards.appendChild(pokeType);
+        pokeCards.appendChild(pokeType2);
+        //Mostrar tarjeta en HTLM -> section
+        document.getElementById("container_pokemones").appendChild(pokeCards).innerHTML;
     }
 }
 //Busqueda Interna -> Pokemones
@@ -214,9 +157,9 @@ const filter = () => {
             pokeType.textContent = pokemones[i].type[0];
             let pokeType2 = document.createElement("p");
             pokeType2.textContent = pokemones[i].type[1];
+            pokeCards.appendChild(image);
             pokeCards.appendChild(pokeName);
             pokeCards.appendChild(pokeNumber);
-            pokeCards.appendChild(image);
             pokeCards.appendChild(pokeType);
             pokeCards.appendChild(pokeType2);
             //Mostrar tarjeta en HTLM -> section
@@ -235,9 +178,9 @@ const filter = () => {
             pokeType.textContent = pokemones[i].type[0];
             let pokeType2 = document.createElement("p");
             pokeType2.textContent = pokemones[i].type[1];
+            pokeCards.appendChild(image);
             pokeCards.appendChild(pokeName);
             pokeCards.appendChild(pokeNumber);
-            pokeCards.appendChild(image);
             pokeCards.appendChild(pokeType);
             pokeCards.appendChild(pokeType2);
             //Mostrar tarjeta en HTLM -> section
@@ -245,5 +188,4 @@ const filter = () => {
         }
     }
 }
-
 search.addEventListener("keyup", filter);

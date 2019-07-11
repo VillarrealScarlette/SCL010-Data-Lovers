@@ -1,59 +1,44 @@
-const arrPokemones = window.POKEMON.pokemon;
-const pokeData = () => { 
-  return arrPokemones;
-}
+const pokeData = window.POKEMON.pokemon;
 window.pokeData = pokeData;
 
 //Filtrar por Huevos
-const filterEggs = (egg) => {
-  let filters = [];
-  for (let i = 0; i < arrPokemones.length; i++) {
-      if (arrPokemones[i].egg == egg) {
-          filters.push(arrPokemones[i]);
-      }
+const filterEggs = (pokeData, selectedEgg) => {
+    const resultEgg = pokeData.filter(Element => {
+      return Element.egg === selectedEgg;
+    });
+    return resultEgg;
   }
-return filters;
-}
 window.filterEggs = filterEggs;
 //Filtrar por Tipo
-const filterTypes = (type) => {
-  let filters = [];
-  for (let i = 0; i < arrPokemones.length; i++) {
-      if (arrPokemones[i].type[0] == type) {
-          filters.push(arrPokemones[i]);
-      } else if (arrPokemones[i].type[1] == type) {
-          filters.push(arrPokemones[i]);
-      }
-  }
-return filters;
+const filterTypes = (pokeData, selectedType) => {
+    const resultType = pokeData.filter(Element => {
+        return Element.type.includes(selectedType);
+    });
+    return resultType;
 }
 window.filterTypes = filterTypes;
-//Ordenar 1-151 -> Ascendente
-function ascendingNum() {
-    arrPokemones.sort(function(a, b) {
-        return a.id - b.id
-    });
+//Ordenar
+const order = (pokeData, selectedOrder) => {
+    let filterOrder = "";
+    if (selectedOrder === "1-151") {
+        filterOrder = pokeData.sort((a, b) => {
+            return a.id - b.id
+        })} else if (selectedOrder === "151-1") {
+            filterOrder = pokeData.sort((a, b) => {
+            return b.id - a.id
+        })} else if (selectedOrder === "A-Z") {
+            filterOrder = pokeData.sort((a, b) => {
+            return a.name.localeCompare(b.name);
+        })} else if (selectedOrder === "Z-A") {
+            filterOrder = pokeData.sort((a, b) => {
+            return b.name.localeCompare(a.name);
+        })}
+        return filterOrder; 
 }
-window.ascendingNum = ascendingNum;
-//Ordenar 151-1 -> Descendente
-function descendingNum() {
-    arrPokemones.sort(function(a, b) {
-        return b.id - a.id
-    });
+window.order = order;
+//Porcentaje
+const porcentageEgg = (filterResult, pokeData) => {
+    const result = Math.round(filterResult.length*100/pokeData.length);
+    return result;
 }
-window.descendingNum = descendingNum;
-//Ordenar A-Z -> Descendente
-function descendingName() {
-    arrPokemones.sort(function(a, b) {
-        return a.name.localeCompare(b.name);
-    });
-}
-window.descendingName = descendingName;
-//Ordenar Z-A -> Ascendente
-function ascendingName() {
-    arrPokemones.sort(function(a, b) {
-        return b.name.localeCompare(a.name);
-    });
-}
-
-window.ascendingName = ascendingName;
+window.porcentageEgg = porcentageEgg;
