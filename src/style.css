@@ -2,7 +2,6 @@ html {
     font-family: sans-serif;
 }
 body {
-    background:white;
     font-family: 'Source Sans Pro';
     font-size: 15px;
     line-height: 23px;
@@ -27,7 +26,7 @@ header {
 
 .pikachu {
 position: absolute; 
-padding-left: 1190px;
+padding-left: 1100px;
 padding-top: 65px;
     }
 
@@ -74,53 +73,75 @@ padding-top: 65px;
     margin-top: 1%;
 }
 p {
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
-    color: #f5f5f5; 
+    color:white; 
+    background-color: #0072aa;
+    border-radius: 8px;
 }
+
 .container_pokemones {
     display: flex;
     flex-wrap: wrap;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 1%;
     box-sizing: border-box;
     justify-content: space-around;
     align-items: center;
+    align-content: center;
     text-align: center;
-    background-color: #386abb;
+    width: 100%;
+background: #2980b9;  
+background: -webkit-linear-gradient(to right, #2c3e50, #2980b9); 
+background: linear-gradient(to right, #2c3e50, #2980b9); 
 }
-
 
 .pokeCards {
-    padding: 15%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    margin-left: 6px;
-    margin-right: 6px;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 15px;
+    width: 120px;
+    height: 240px;
     text-align: center; 
-    background-color:;
     border-radius: 6%;
-    background-color: aliceblue;
-}
-h3 {
-    color: #ffcc03;
-    text-shadow: 2.5px 0 0 #386abb, -2.5px 0 0 #386abb, 0 2.5px 0 #386abb, 0 -2.5px 0 #386abb, 1.5px 1.5px #386abb, -1.5px -1.5px 0 #386abb, 1.5px -1.5px 0 #386abb, -1.5px 1.5px 0 #386abb;
+    background-color: white; opacity: 0.9;
 }
 
-* {cursor: url(http://cur.cursors-4u.net/games/gam-13/gam1309.ani), url(http://cur.cursors-4u.net/games/gam-13/gam1309.png), auto !important;}
+  .pokeCards:hover {
+    opacity: 1;
+  }
+
+
+h3 {
+    margin: 5px;
+    color: #42687e;
+}
   
+h4 {
+    margin: 0px;
+    color: #42687e;
+}
+
 h1.contactTitle {
+    background-color: white;
     text-align: center;
     position: relative;
     font-size: 300%;
+    color: #2c3e50;
 }
 .contact {
+    color: #2c3e50;
+    background-color: white;
     display: flex;
     justify-content: space-around;
+    text-align: justify;    
     padding-left: 30%;
     padding-right: 30%;
 }
 .contacto {
+    background-color: white;
     text-align: center;
 }
 
@@ -130,10 +151,13 @@ h1.contactTitle {
    padding: 0%;
 }
 
-.caja {
-    background-color: slategrey; 
+.map {
     width: 100%;
-    height: 100%;
+    height: 480px;
+}
+
+.caja {
+    background-color: #42687e;
 }
 
 
@@ -146,3 +170,5 @@ h1.contactTitle {
         display: none;
     }
 }
+
+* {cursor: url(http://cur.cursors-4u.net/games/gam-13/gam1309.ani), url(http://cur.cursors-4u.net/games/gam-13/gam1309.png), auto !important;}
