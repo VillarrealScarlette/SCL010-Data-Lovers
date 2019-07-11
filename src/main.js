@@ -1,19 +1,15 @@
 const pokemones = window.POKEMON.pokemon;
 for (let i = 0; i < pokemones.length; i++) {
+    
     //Creando 'div' que será la tarjeta container 
     
     let cards = document.createElement("div");
     cards.className = "flip-card";
 
-    let cardsInner = document.createElement("div");
-    cardsInner.className = "flip-card-inner";
-
     let pokeCards = document.createElement("div");
-    pokeCards.className = "flip-card-front";
+    pokeCards.className = "pokeCards";
     pokeCards.id = "pokeCards";
 
-    let pokeCardsBack = document.createElement("div");
-    pokeCardsBack.className = "flip-card-back";
     
     //Creando nombre del pokemon
     let pokeName = document.createElement("h3");
@@ -22,9 +18,6 @@ for (let i = 0; i < pokemones.length; i++) {
     //Creando imagen del pokemon
     let image = document.createElement("img");
     image.src = pokemones[i].img;
-
-    let image2 = document.createElement("img");
-    image2.src = pokemones[i].img;
 
     //Creando número del pokemon
     let pokeNumber = document.createElement("h4");
@@ -35,25 +28,18 @@ for (let i = 0; i < pokemones.length; i++) {
     //Creando tipo de pokemon -> segundo tipo
     let pokeType2 = document.createElement("p");
     pokeType2.textContent = pokemones[i].type[1];
-    //Dando valor a variables
-    
 
-    cards.appendChild(cardsInner);
-    cardsInner.appendChild(pokeCards);
+    //Dando valor a variables
+    cards.appendChild(pokeCards);
     pokeCards.appendChild(pokeName);
     pokeCards.appendChild(pokeNumber);
     pokeCards.appendChild(image);
     pokeCards.appendChild(pokeType);
-    pokeCards.appendChild(pokeCardsBack);
-    pokeCardsBack.appendChild(image2);
-    pokeCardsBack.appendChild(pokeType2);
-    //Mostrar tarjeta en HTLM -> section
 
+    //Mostrar tarjeta en HTLM -> section
     document.getElementById("container_pokemones").appendChild(cards).innerHTML;    
     
-    console.log(pokeName);
 }
-
 
 //Filtrar por Huevo 
 const selectEggs = document.getElementById("eggs");

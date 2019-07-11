@@ -3,6 +3,7 @@ const pokeData = () => {
   return arrPokemones;
 }
 window.pokeData = pokeData;
+
 //Filtrar por Huevos
 const filterEggs = (egg) => {
   let filters = [];
@@ -54,4 +55,5 @@ function ascendingName() {
         return b.name.localeCompare(a.name);
     });
 }
+
 window.ascendingName = ascendingName;
