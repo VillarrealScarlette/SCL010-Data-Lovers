@@ -1,12 +1,12 @@
 # WikiPokémon!
 
-<img src=images/slogan.jpg>
+<img src=images/slogan.gif>
 
 La serie de televisión de dibujos animados Pokémon muestra las aventuras de Ash Ketchum, su compañero Pikachu y muchos amigos y Pokémon maravillosos. Sus aventuras han llegado a la gran pantalla en forma de una serie de largometrajes a traves de todos estos años, pero su más grande éxito lo logró en el año 2016 con _**Pokémon GO**_ un videojuego de realidad aumentada que revolucionó al mundo basado en la localización desarrollado por [Niantic, Inc.](https://es.wikipedia.org/wiki/Niantic_Labs "Niantic Labs") El juego consiste en buscar y capturar personajes de la saga Pokémon escondidos en ubicaciones del mundo real y luchar con ellos, lo que implica desplazarse físicamente por las calles de la ciudad para progresar. La aplicación comporta un elemento de interacción social, ya que promueve reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones.
 
 **WikiPokémon** es una página web en la cuál podrás encontrar información de la primera generación de Pokémon, con datos importantes para comenzar a jugar Pokémon GO! 
 
-<img src=images/logo2.jpg>
+<img src=images/logo2.gif>
 
 ## Usuarios objetivos 🚶‍
 
@@ -14,7 +14,7 @@ La serie de televisión de dibujos animados Pokémon muestra las aventuras de As
 - Edad: Mayores de 14 años 
 - Para entrenadores expertos y novatos de Pokémon GO
 - Necesidad: Información sobre las principales características de los personajes de Pokémon. 
-<img src=images/grafico.jpg>
+<img src=images/grafico.gif>
 
 ## Historias de usuario 👥
 
@@ -47,7 +47,7 @@ Historia de usuario #7
 
 El diseño fue realizado a mano alzada en una primera instancia y luego se realizó un wireframe, fiel a la primera maquetación en papel.
 
-<img src=images/balsamiq.jpg>
+<img src=images/balsamiq.gif>
 
 
 ## Testeos de usabilidad 💬
