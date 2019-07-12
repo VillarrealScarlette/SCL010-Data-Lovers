@@ -1,6 +1,6 @@
 # WikiPokémon!
 
-<img src=images/slogan.png>
+<img src=images/slogan.jpg>
 
 La serie de televisión de dibujos animados Pokémon muestra las aventuras de Ash Ketchum, su compañero Pikachu y muchos amigos y Pokémon maravillosos. Sus aventuras han llegado a la gran pantalla en forma de una serie de largometrajes a traves de todos estos años, pero su más grande éxito lo logró en el año 2016 con _**Pokémon GO**_ un videojuego de realidad aumentada que revolucionó al mundo basado en la localización desarrollado por [Niantic, Inc.](https://es.wikipedia.org/wiki/Niantic_Labs "Niantic Labs") El juego consiste en buscar y capturar personajes de la saga Pokémon escondidos en ubicaciones del mundo real y luchar con ellos, lo que implica desplazarse físicamente por las calles de la ciudad para progresar. La aplicación comporta un elemento de interacción social, ya que promueve reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones.
 
@@ -98,4 +98,3 @@ Daniela Quintana* 🐱
  - [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
  - [x] UI: Permite ordenar data por uno o más campos (asc y desc).
  - [x] UI: Permite filtrar data en base a una condición.
-
