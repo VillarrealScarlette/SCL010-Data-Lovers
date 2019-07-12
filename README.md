@@ -69,34 +69,32 @@ El diseño fue realizado a mano alzada en una primera instancia y luego se reali
 ### Primer Testeo
 
 #### Identificación de usuario
-**Nombre:** Macarena Covarrubias
-**Edad:** 29 años 
-**Ocupación:** Pedagoga
-**Experiencia de juego:** Novata en Pokémon GO
-**Feedback/Consideraciones:**
-- Piensa que la página es para que le envíen la información que filtró a su mail (no da cuenta por si misma del sentido para el que se creó la página)
-- No sabe que escribir en el siguiente ‘input’ después de mail
-- Comenta que la página no especifica cómo ingresar el nombre, si incluye o no su apellido, si es nombre completo (no existe una instrucción o ejemplo)
-- El mapa le gusta, es claro y muy útil 
-- No entiende la descripción para el filtro Huevo
-- Le gustó el mouse y la animación de pikachu saltando
-- Le gusta el fondo azul y el banner de fondo blanco
+- **Nombre:** Macarena Covarrubias
+- **Edad:** 29 años 
+- **Ocupación:** Pedagoga
+- **Experiencia de juego:** Novata en Pokémon GO
+- **Feedback/Consideraciones:**
+  - Piensa que la página es para que le envíen la información que filtró a su mail (no da cuenta por si misma del sentido para el que se creó la página)
+  - No sabe que escribir en el siguiente ‘input’ después de mail
+  - Comenta que la página no especifica cómo ingresar el nombre, si incluye o no su apellido, si es nombre completo (no existe una instrucción o ejemplo)
+  - El mapa le gusta, es claro y muy útil
+  - Le gustó el mouse y la animación de pikachu saltando
+  - Le gusta el fondo azul y el banner de fondo blanco
 
 Para ver el vídeo de este testeo haz click [aquí](https://drive.google.com/drive/folders/14825lheLvrCP8-Z1ea5gOgY9Ln3RmICZ)
 
 ### Segundo Testeo
 
 #### Identificación de usuario
-**Nombre:** Juan Carlos
-**Edad:** 29 años 
-**Ocupación:** Informático
-**Experiencia de juego:** Novato en Pokémon GO
-**Feedback/Consideraciones:**
-
-- Indica que le gustan las animaciones
-- Comprende bien la página
-- Comenta que *"me hubiese gustado más información en cada tarjeta"*
-- Dijo que le gustó el diseño
+- **Nombre:** Juan Carlos
+- **Edad:** 29 años 
+- **Ocupación:** Informático
+- **Experiencia de juego:** Novato en Pokémon GO
+- **Feedback/Consideraciones:**
+  - Indica que le gustan las animaciones
+  - Comprende bien la página
+  - Comenta que *"me hubiese gustado más información en cada tarjeta"*
+  - Dijo que le gustó el diseño
 
 Para ver el vídeo de este testeo haz click [aquí](https://www.loom.com/share/df1fc3851ea6413e81e400e2cc15d40b)
 
