@@ -38,7 +38,7 @@ const order = (pokeData, selectedOrder) => {
 window.order = order;
 //Porcentaje
 const porcentageEgg = (filterResult, pokeData) => {
-    const result = Math.round(filterResult.length*100/pokeData.length);
+    const result = Math.round((filterResult.length*100)/pokeData.length);
     return result;
 }
 window.porcentageEgg = porcentageEgg;
