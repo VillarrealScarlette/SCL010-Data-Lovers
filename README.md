@@ -6,7 +6,7 @@ La serie de televisión de dibujos animados Pokémon muestra las aventuras de As
 
 **WikiPokémon** es una página web en la cuál podrás encontrar información de la primera generación de Pokémon, con datos importantes para comenzar a jugar Pokémon GO! 
 
-<img src=images/logo2.png>
+<img src=images/logo2.jpg>
 
 ## Usuarios objetivos 🚶‍
 
@@ -14,7 +14,7 @@ La serie de televisión de dibujos animados Pokémon muestra las aventuras de As
 - Edad: Mayores de 14 años 
 - Para entrenadores expertos y novatos de Pokémon GO
 - Necesidad: Información sobre las principales características de los personajes de Pokémon. 
-<img src=images/grafico.png>
+<img src=images/grafico.jpg>
 
 ## Historias de usuario 👥
 
@@ -47,7 +47,7 @@ Historia de usuario #7
 
 El diseño fue realizado a mano alzada en una primera instancia y luego se realizó un wireframe, fiel a la primera maquetación en papel.
 
-<img src=images/balsamiq.png>
+<img src=images/balsamiq.jpg>
 
 
 ## Testeos de usabilidad 💬
