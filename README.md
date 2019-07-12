@@ -1,12 +1,11 @@
 # WikiPokémon!
 
-<img src=images/slogan.gif>
+![enter image description here](https://lh3.googleusercontent.com/YPefHzSQrjjm5vUqchOaqQrlwiIK8X3Njqe2o_QFBU8hYXB1xE6_DP_o5THYZimGqXeON-GVdaiFZw)
 
-La serie de televisión de dibujos animados Pokémon muestra las aventuras de Ash Ketchum, su compañero Pikachu y muchos amigos y Pokémon maravillosos. Sus aventuras han llegado a la gran pantalla en forma de una serie de largometrajes a traves de todos estos años, pero su más grande éxito lo logró en el año 2016 con _**Pokémon GO**_ un videojuego de realidad aumentada que revolucionó al mundo basado en la localización desarrollado por [Niantic, Inc.](https://es.wikipedia.org/wiki/Niantic_Labs "Niantic Labs") El juego consiste en buscar y capturar personajes de la saga Pokémon escondidos en ubicaciones del mundo real y luchar con ellos, lo que implica desplazarse físicamente por las calles de la ciudad para progresar. La aplicación comporta un elemento de interacción social, ya que promueve reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones.
+La serie de televisión de dibujos animados Pokémon muestra las aventuras de Ash Ketchum, su compañero Pikachu y muchos amigos y Pokémon maravillosos. Sus aventuras han llegado a la gran pantalla en forma de una serie de largometrajes a traves de todos estos años, pero su más grande éxito lo logró en el año 2016 con _**Pokémon GO**_ un videojuego de realidad aumentada que revolucionó al mundo basado en la localización desarrollado por [Niantic, Inc.](https://es.wikipedia.org/wiki/Niantic_Laxbs "Niantic Labs") El juego consiste en buscar y capturar personajes de la saga Pokémon escondidos en ubicaciones del mundo real y luchar con ellos, lo que implica desplazarse físicamente por las calles de la ciudad para progresar. La aplicación comporta un elemento de interacción social, ya que promueve reuniones físicas de los usuarios en distintas ubicaciones de sus poblaciones.
 
-**WikiPokémon** es una página web en la cuál podrás encontrar información de la primera generación de Pokémon, con datos importantes para comenzar a jugar Pokémon GO! 
+[**WikiPokémon**]([https://dacoquima.github.io/SCL010-data-lovers/src/index.html](https://dacoquima.github.io/SCL010-data-lovers/src/index.html))  es una página web en la cuál podrás encontrar información de la primera generación de Pokémon, con datos importantes para comenzar a jugar Pokémon GO! 
 
-<img src=images/logo2.gif>
 
 ## Usuarios objetivos 🚶‍
 
@@ -14,7 +13,8 @@ La serie de televisión de dibujos animados Pokémon muestra las aventuras de As
 - Edad: Mayores de 14 años 
 - Para entrenadores expertos y novatos de Pokémon GO
 - Necesidad: Información sobre las principales características de los personajes de Pokémon. 
-<img src=images/grafico.gif>
+
+
 
 ## Historias de usuario 👥
 
@@ -47,8 +47,7 @@ Historia de usuario #7
 
 El diseño fue realizado a mano alzada en una primera instancia y luego se realizó un wireframe, fiel a la primera maquetación en papel.
 
-<img src=images/balsamiq.gif>
-
+![enter image description here](https://lh3.googleusercontent.com/NttqiT0ihWTu337h_zsxeVQ4gFdzvErvfSbfxP9uv6BkWZr5dLVkoqxY7PVt1X-JpN0gimOOBcJkcA)
 
 ## Testeos de usabilidad 💬
 
@@ -64,6 +63,7 @@ Macarena Covarrubias, 29 años, Pedagoga, novata en pokemon go
 Para ver vídeo del test haga click [aquí](https://drive.google.com/drive/folders/14825lheLvrCP8-Z1ea5gOgY9Ln3RmICZ)
 
 Juan Carlos, 29 años.
+
 - Indica que le gustaron las animaciones
 - que se comprende bien la página
 - Comenta que le hubiese gustado más información en cada tarjeta
@@ -71,11 +71,15 @@ Juan Carlos, 29 años.
 
 Para ver vídeo del test haga click [aquí](https://www.loom.com/share/df1fc3851ea6413e81e400e2cc15d40b)
 
+![enter image description here](https://lh3.googleusercontent.com/PphVYNXV1TQ-WOh7tcvJ_n42v2RSzWlm1hoB1HR6lJsFCrt9nHec6p2PG00bfjT-b8xVdSJHBWOEiQ)
+
 ## Futuras mejoras ✨
 En este proyecto aprendimos a trabajar en conjunto, sin embargo, en una próxima oportunidad tomaríamos decisiones más concisas y dividiríamos de mejor manera las tareas de cada quien, usando herramientas como Trellos e instancias como dailies.
 
+![enter image description here](https://lh3.googleusercontent.com/Ab9VxgXDE2z2zUwEx5hdSj3Gds-CFcqU6vQYyMXgbuldQfzfx8fD4U-pb4X-LifqTpUYHVToB_zkHg)
+
 ## Equipo de trabajo
-*Scarlette Villareal 🐶
+*Scarlette Villareal 🐶 
 Daniela Quintana* 🐱
 
 ## Checklist
@@ -98,3 +102,7 @@ Daniela Quintana* 🐱
  - [x] UI: Muestra lista y/o tabla con datos y/o indicadores.
  - [x] UI: Permite ordenar data por uno o más campos (asc y desc).
  - [x] UI: Permite filtrar data en base a una condición.
+
+
+ [https://dacoquima.github.io/SCL010-data-lovers/src/index.html](https://dacoquima.github.io/SCL010-data-lovers/src/index.html)
+
