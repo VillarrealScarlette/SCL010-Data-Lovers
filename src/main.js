@@ -35,7 +35,7 @@ for (let i = 0; i < pokemones.length; i++) {
     document.getElementById("container_pokemones").appendChild(cards).innerHTML;        
 }
 //Filtrar por Huevo 
-const selectEggs = document.getElementById("eggs");
+const selectEggs = document.getElementById("eggs"); 
 selectEggs.addEventListener("change", showByEgg);
 function showByEgg() {
     //Condicion = variable

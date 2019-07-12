@@ -2,75 +2,80 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PokeInfo</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+        .btn-arrow{
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+        }
+    </style>
   </head>
   <body class="grid">
     <!-- INICIO Header - Banner -->
-    <header>       
-            <link rel="icon" type="image/vnd.microsoft.icon" href="RUTA/NOMBRE_FICHERO.ico">
+    
+    <header id="arriba">
             <img id="pikachu" class="pikachu" src="images/pikachu8.gif" height="150px" width="180px">
-        <div class="b-container">
-            <div class="logoPokemon">
                 <a class="logo-block" href="index.html">
-                    <img id="logo" src="images/logo.png" alt="Pokemon Logo">
+                    <img id="logo" src="images/logo2.png" height="130" width="250px alt="Pokemon Logo">
                 </a>
             </div>
         </div>
+        <div class="menu" id="menu">
+            <div class="searchEngine">
+                <input type="text" id="search" min="0" placeholder="Buscar por nombre o número                 🔎">
+                <!-- <p>Busca un pokemon ingresando su nombre <br> o su número de la Pokedex Nacional</p> -->
+            </div>
+            <div class="filters">
+                <div class="order filter">
+                    <label for="order">Ordenar por </label><br>
+                    <select class="selector" id="order">
+                            <option value="0" selected="selected">Seleccionar</option>
+                        <option value="A-Z"> A - Z </option>
+                        <option value="Z-A"> Z - A </option>
+                        <option value="1-151"> 1 - 151 </option>
+                        <option value="151-1"> 151 - 1 </option>
+                    </select>
+                </div>
+                <div class="type filter">
+                    <label for="type">Filtrar por tipo</label><br>
+                    <select class="selector" id="type">
+                            <option value="0" selected="selected">Seleccionar</option>
+                        <option value="Bug"> Bug </option>
+                        <option value="Dragon"> Dragon </option>
+                        <option value="Electric"> Electric </option>
+                        <option value="Fighting"> Fighting </option>
+                        <option value="Fire"> Fire </option>
+                        <option value="Flying"> Flying </option>
+                        <option value="Ghost"> Ghost </option>
+                        <option value="Grass"> Grass </option>
+                        <option value="Ground"> Ground </option>
+                        <option value="Ice"> Ice </option>
+                        <option value="Normal"> Normal </option>
+                        <option value="Poison"> Poison </option>
+                        <option value="Psychic"> Psychic </option>
+                        <option value="Rock"> Rock </option>
+                        <option value="Water"> Water </option>
+                    </select>
+                </div>
+                <div class="eggs filter">
+                    <label for="eggs">Filtrar por KM</label><br>
+                    <select class="selector" id="eggs">
+                        <option value="0" selected="selected">Seleccionar</option>
+                        <option value="2 km"> 2 km </option>
+                        <option value="5 km"> 5 km </option>
+                        <option value="10 km"> 10 km </option>
+                    </select>
+                </div>
+            </div>
+        </div>    
     </header>
     <!-- FIN Header - Banner -->
     <!-- INICIO Menú -->
-    <div class="menu">
-        <div class="filters">
-            <div class="order filter">
-                <label for="order">Ordenar por </label><br>
-                <select class="selector" id="order">
-                        <option value="0" selected="selected">Seleccionar</option>
-                    <option value="A-Z"> A - Z </option>
-                    <option value="Z-A"> Z - A </option>
-                    <option value="1-151"> 1 - 151 </option>
-                    <option value="151-1"> 151 - 1 </option>
-                </select>
-            </div>
-            <div class="type filter">
-                <label for="type">Filtrar por tipo</label><br>
-                <select class="selector" id="type">
-                        <option value="0" selected="selected">Seleccionar</option>
-                    <option value="Bug"> Bug </option>
-                    <option value="Dragon"> Dragon </option>
-                    <option value="Electric"> Electric </option>
-                    <option value="Fighting"> Fighting </option>
-                    <option value="Fire"> Fire </option>
-                    <option value="Flying"> Flying </option>
-                    <option value="Ghost"> Ghost </option>
-                    <option value="Grass"> Grass </option>
-                    <option value="Ground"> Ground </option>
-                    <option value="Ice"> Ice </option>
-                    <option value="Normal"> Normal </option>
-                    <option value="Poison"> Poison </option>
-                    <option value="Psychic"> Psychic </option>
-                    <option value="Rock"> Rock </option>
-                    <option value="Water"> Water </option>
-                </select>
-            </div>
-            <div class="eggs filter">
-                <label for="eggs">Filtrar por Huevos</label><br>
-                <select class="selector" id="eggs">
-                    <option value="0" selected="selected">Seleccionar</option>
-                    <option value="2 km"> 2 km </option>
-                    <option value="5 km"> 5 km </option>
-                    <option value="10 km"> 10 km </option>
-                </select>
-            </div>
-        </div>
-        <div class="searchEngine">
-            <input type="text" id="search" min="0" placeholder="Buscar por nombre o número                 🔎">
-            <!-- <p>Busca un pokemon ingresando su nombre <br> o su número de la Pokedex Nacional</p> -->
-        </div>
-    </div>    
-
-    <img id="arrow" class="arrow" src="images/icoflecha.png" width="45px" height="45px">
       <!-- FIN Menú -->
+
       <!-- INICIO Pokedex -->
       <section id="container_pokemones" class="container_pokemones">
       </section>
@@ -87,22 +92,24 @@
       <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1YabVR-8GDYm_QqayFePS3RuEdB3neAKT"></iframe> 
 
       <h1 class="contactTitle">C O N T A C T O</h1>
-    <div id="contact" class="contact">
-  <div class="gif"><img  src="images/pikachu3.gif" height="400px" width="540px"></div> 
-<div class="contacto">
-    <br><br>
-    <span>Tu nombre  </span>
-    <input type="name">
-    <br><br>
-    <span>Email  </span><input type="email">
-    <br><br>
-    <textarea name="" id="" rows="15" cols="80"></textarea>
-    <br>
-    <button type="submit">Enviar</button>
-    <br><br>
-    </div>
-</div>
-
+        <div id="contact" class="contact">
+          <div class="gif"><img src="images/pikachu3.gif" height="400px" width="580px"></div>
+          <div class="contacto">
+              <p class="info">Si tienes alguna duda o sugerencia, puedes escribirnos aquí. </p>
+                 <p class="info"> Te responderemos a la brevedad. </p>
+            <br><br>
+            <span>Tu nombre    </span>
+            <input type="name" size="50">
+            <br><br>
+            <span>Email   </span><input type="email" size="50">
+            <br><br>
+            <textarea name="" id="" rows="15" cols="80"></textarea>
+            <br><br>
+            <button type="submit" class="submit">Enviar</button>
+            <br><br>
+          </div>
+        </div>
+<a class="btn-arrow" href="#arriba"><img src="images/icoflecha.png" width="45px" height="45px"></a>
    <div class="caja">
       
     <p></p>
