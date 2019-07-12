@@ -49,6 +49,11 @@ El diseño fue realizado a mano alzada en una primera instancia y luego se reali
 
 ![enter image description here](https://lh3.googleusercontent.com/NttqiT0ihWTu337h_zsxeVQ4gFdzvErvfSbfxP9uv6BkWZr5dLVkoqxY7PVt1X-JpN0gimOOBcJkcA)
 
+### Planificación de proyecto
+)
+[Trello](https://trello.com/b/dDEAROua/data-lovers)
+
+
 ## Testeos de usabilidad 💬
 
 Macarena Covarrubias, 29 años, Pedagoga, novata en pokemon go
@@ -74,12 +79,12 @@ Para ver vídeo del test haga click [aquí](https://www.loom.com/share/df1fc3851
 ![enter image description here](https://lh3.googleusercontent.com/PphVYNXV1TQ-WOh7tcvJ_n42v2RSzWlm1hoB1HR6lJsFCrt9nHec6p2PG00bfjT-b8xVdSJHBWOEiQ)
 
 ## Futuras mejoras ✨
-En este proyecto aprendimos a trabajar en conjunto, sin embargo, en una próxima oportunidad tomaríamos decisiones más concisas y dividiríamos de mejor manera las tareas de cada quien, usando herramientas como Trellos e instancias como dailies.
+En este proyecto aprendimos a trabajar en conjunto, sin embargo, en una próxima oportunidad tomaríamos decisiones más concisas y dividiríamos de mejor manera las tareas de cada quien, usando herramientas como trello e instancias como dailies.
 
 ![enter image description here](https://lh3.googleusercontent.com/Ab9VxgXDE2z2zUwEx5hdSj3Gds-CFcqU6vQYyMXgbuldQfzfx8fD4U-pb4X-LifqTpUYHVToB_zkHg)
 
 ## Equipo de trabajo
-*Scarlette Villareal 🐶 
+*Scarlette Villarreal 🐶 
 Daniela Quintana* 🐱
 
 ## Checklist
