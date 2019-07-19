@@ -1,48 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WikiPokemon</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        .btn-arrow{
-            position: fixed;
-            right: 25px;
-            bottom: 25px;
-        }
-    </style>
-  </head>
-  <body class="grid">
-    <!-- INICIO Header - Banner -->
-    
-    <header id="arriba">
-            <img id="pikachu" class="pikachu" src="images/pikachu8.gif" height="150px" width="180px">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WikiPokemon</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+      <!-- INICIO Header - Banner -->
+      <header>
+          <a class="logo-block" href="index.html">
+                <img id="pikachu" class="pikachu" src="images/pikachu8.gif" height="150px" width="180px">
                 <a class="logo-block" href="index.html">
-                    <img id="logo" src="images/logo2.png" height="130" width="250px alt="Pokemon Logo">
-                </a>
-            </div>
-        </div>
-        <div class="menu" id="menu">
-            <div class="searchEngine">
-                <input type="text" id="search" min="0" placeholder="Buscar por nombre o número                 🔎">
-                <!-- <p>Busca un pokemon ingresando su nombre <br> o su número de la Pokedex Nacional</p> -->
-            </div>
-            <div class="filters">
-                <div class="order filter">
+                <img id="logo" src="images/logo2.png" height="130" width="250px" alt="Pokemon Logo">
+            </a>
+            <div class="menu" id="menu">
+                <div class="searchEngine">
+                    <input type="text" id="search" min="0" placeholder="Buscar por nombre o número                 🔎">
+                </div>
+                <div class="filters">
                     <label for="order">Ordenar por </label><br>
                     <select class="selector" id="order">
-                            <option value="0" selected="selected">Seleccionar</option>
+                        <option value="0" selected="selected">Seleccionar</option>
                         <option value="A-Z"> A - Z </option>
                         <option value="Z-A"> Z - A </option>
                         <option value="1-151"> 1 - 151 </option>
                         <option value="151-1"> 151 - 1 </option>
                     </select>
-                </div>
-                <div class="type filter">
                     <label for="type">Filtrar por tipo</label><br>
                     <select class="selector" id="type">
-                            <option value="0" selected="selected">Seleccionar</option>
+                        <option value="0" selected="selected">Seleccionar</option>
                         <option value="Bug"> Bug </option>
                         <option value="Dragon"> Dragon </option>
                         <option value="Electric"> Electric </option>
@@ -59,8 +46,6 @@
                         <option value="Rock"> Rock </option>
                         <option value="Water"> Water </option>
                     </select>
-                </div>
-                <div class="eggs filter">
                     <label for="eggs">Filtrar por KM</label><br>
                     <select class="selector" id="eggs">
                         <option value="0" selected="selected">Seleccionar</option>
@@ -70,56 +55,30 @@
                     </select>
                 </div>
             </div>
-        </div>    
-    </header>
-    <!-- FIN Header - Banner -->
-    <!-- INICIO Menú -->
-      <!-- FIN Menú -->
-
-      <!-- INICIO Pokedex -->
-      <section id="container_pokemones" class="container_pokemones">
-      </section>
-      <div class="overlay"></div>
-      <!-- FIN Pokedex --> 
-
-      <!--Página Contacto-->
-
-      <div class="porcentajes">
-
-
-      </div>
-
-      <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1YabVR-8GDYm_QqayFePS3RuEdB3neAKT"></iframe> 
-
-      <h1 class="contactTitle">C O N T A C T O</h1>
+        </header>
+        <!-- FIN Header - Banner -->
+        <!-- INICIO Pokedex -->
+        <section id="container_pokemones" class="container_pokemones">
+        </section>
+        <!-- FIN Pokedex --> 
+        <!--Página Contacto-->
+        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1YabVR-8GDYm_QqayFePS3RuEdB3neAKT"></iframe> 
+        <h1 class="contactTitle">C O N T A C T O</h1>
         <div id="contact" class="contact">
-          <div class="gif"><img src="images/pikachu3.gif" height="400px" width="580px"></div>
-          <div class="contacto">
+          <div class="contacts">
               <p class="info">Si tienes alguna duda o sugerencia, puedes escribirnos aquí. </p>
-                 <p class="info"> Te responderemos a la brevedad. </p>
-            <br><br>
-            <span>Tu nombre    </span>
-            <input type="name" size="50">
-            <br><br>
-            <span>Email   </span><input type="email" size="50">
-            <br><br>
-            <textarea name="" id="" rows="15" cols="80"></textarea>
-            <br><br>
-            <button type="submit" class="submit">Enviar</button>
-            <br><br>
-          </div>
+              <p class="info"> Te responderemos a la brevedad. </p><br><br>
+              <span>Tu nombre    </span>
+              <input type="name" size="50"><br><br>
+              <span>Email   </span><input type="email" size="50"><br><br>
+              <textarea name="" id="" rows="15" cols="80"></textarea><br><br>
+              <button type="submit" class="submit">Enviar</button>
+              <br><br>
+            </div>
         </div>
-<a class="btn-arrow" href="#arriba"><img src="images/icoflecha.png" width="45px" height="45px"></a>
-   <div class="caja">
-      
-    <p></p>
-
-    <br><br><br><br>
-   </div>
-        
-    <div id="root"></div>
-    <script src="data/pokemon/pokemon.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+        <div id="root"></div>
+        <script src="data/pokemon/pokemon.js"></script>
+        <script src="data.js"></script>
+        <script src="main.js"></script>
   </body>
 </html>
